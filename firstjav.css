@@ -1,0 +1,356 @@
+* {box-sizing: border-box}
+body {
+  font-family: Verdana, sans-serif;
+   margin:0;
+   background: url(rose\ image.jpeg) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   outline: 0;
+   vertical-align: baseline;
+   
+
+}
+
+img {vertical-align: middle;}
+.mySlides {display: none;
+}
+
+.block {
+    display:block;
+}
+
+
+
+.home-menue{
+  background-color: #222;
+  padding: 30px;
+  position: relative;
+  
+}
+
+.adiv{
+  margin-left: 790px;
+}
+.home-menue a{
+  text-decoration: none;
+  color: #bbb;
+  margin-left: 50px;
+ font-family: monospace;
+ font-size: 20px;
+  
+}
+
+.home-menue a:hover{
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  left: 300px;
+  top: 10px;
+  margin: auto;
+  animation: slideIn 1s ease-in;
+  
+ 
+}
+.slideshow-container img{
+    width: 400px;
+    height: 400px;
+    border: 5px solid #1A928B;
+    
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  background-color: #1A928B;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  left: 355px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* Caption text */
+.text {
+  color: #222;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  left: 170px;
+  width: 100%;
+  font-weight: bolder;
+  
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #1A928B;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #fff;
+}
+
+
+.quote{
+  text-align: center;
+  animation: slideInFromBottom 1s ease-in;
+}
+
+.quote-p{
+  color: #ccc;
+} 
+
+.text-class{
+text-align:center;
+  font-family: monospace;
+  display: block;
+  color: #ccc;
+}
+
+.js-new-quote{
+text-align: center;
+}
+
+button{
+  padding: 15px;
+  font-family: monospace;
+  background-color: #1A928B;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+#footer-class{
+  width: auto;
+  height: 150px;
+  background-color: #222;
+  text-align: center;
+  position: relative;
+  top: 90px
+}
+
+#footer-class .fab{
+  font-size: 30px;
+  position: relative;
+  left: -10px;
+ top: 10px;
+ margin-left: 20px;
+  
+}
+#footer-class a{
+text-decoration: none;
+color:#ccc;
+}
+#double-i{
+  color: #1DA1F2;
+}
+#double-ii{
+color: #D93F7F;
+}
+#double-iii{
+  color: #1DA1F2;
+}
+#footer-class h2{
+  font-family: monospace;
+  color: #ccc;
+  cursor: pointer;
+  }
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@keyframes slideInFromBottom{
+  0%{
+      transform: translatey(100%);
+  }
+  100%{
+      transform: translatex(0);
+  }
+}
+
+@keyframes slideIn{
+  0% {
+    transform: scale(1) rotate(5deg);
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+@media screen and (min-width: 1025px) and (max-width: 1280px)  {
+  body{
+    overflow-x: auto;
+    width:50%;
+  }
+  #footer-class{
+    background-color: #222;
+    position: relative;
+    top: 60px;
+    height:80px;
+    width: 1280px;
+  }
+  .dot{
+    position: relative;
+    left: 350px;
+    }
+  .home-menue{
+    background-color: #222;
+    padding: 10px;
+    width: 1280px;
+  }
+  .home-menue a{
+   display: block;
+   margin-left: 120px;
+   width: 100px;
+ }
+ .quote{
+  position: relative;
+  top: 20px;
+  left: 350px;
+}
+
+.slideshow-container {
+   left: 450px;
+   
+ 
+}
+.members{
+  
+  color: #D93F7F;
+  
+}
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px)  {
+  
+  .home-menue{
+    background-color: #222;
+    padding: 0;
+    width: 446px;
+  }
+  .home-menue a{
+   display: flex;
+   width: 100px;
+   margin-left: 300px;
+   
+ }
+ 
+ .slideshow-container {
+   
+  left: 50px;
+  margin: 0;
+ 
+}
+.slideshow-container img{
+  width: 350px;
+  height: 350px;
+  
+  
+}
+.next {
+  left: 305px;
+ 
+}
+.adiv{
+  margin-left: 0px;
+  overflow:hidden;
+  width: fit-content;
+}
+.text {
+  left: 130px;
+  color: #ffff;
+  
+  
+}
+
+.quote{
+  position: relative;
+  top: 20px;
+  left: 120px;
+}
+
+
+#footer-class{
+  height: 150px;
+  top: 80px;
+  width: 446px;
+  
+}
+body{
+  overflow-x: hidden;
+  width: 50%;
+ 
+  
+}
+.dot{
+position: relative;
+left: 100px;
+}
+}
+

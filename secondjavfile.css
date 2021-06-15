@@ -1,0 +1,200 @@
+.allmem-div{
+display: flex;
+margin-top: -20px;
+margin-left: 100px;
+animation: slideInBottom 1s ease-in;
+}
+.members{
+    text-align: center; margin-top: -5px; color: #ccc; margin-left: -0px;
+}
+
+.mem-nanya {
+    margin-left: 30px;
+}
+.p-nanya{
+    padding: 0; margin:0; text-align: center; color: #ccc;
+}
+
+.mem-nanya img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    
+}
+.mem-emeka img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 150px;
+}
+.mem-jenny img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 150px;
+}
+.p-jenny{
+    padding: 0; margin:0;  margin-left: 150px; text-align: center; color: #ccc;
+}
+.youngers{
+    display: flex;
+    margin-left: 130px;
+    animation: slideInFromTop 1s ease-in;
+    margin-top: 30px;
+
+}
+.mem-stephanie img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+   
+}
+.mem-bobs img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 150px;
+}
+
+
+.p-bobs{
+padding: 0; margin:0;  margin-left: 150px; text-align: center; color: #ccc;
+}
+.mem-collins img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 150px;
+}
+.p-collins{padding: 0; margin:0; margin-left: 150px; text-align: center; color: #ccc;
+}
+
+
+
+
+@media screen and (min-width: 1025px) and (max-width: 1280px)  {
+    
+    .allmem-div {
+        margin-left: 60px;
+    }
+    .youngers{
+        margin-left: 90px;
+        
+        
+    }
+    .youngers img{
+       
+        width: 250px;
+       height: 250px;
+        
+    }
+    .allmem-div img{
+       width: 250px;
+       height: 250px;
+        }
+        
+        .members{
+            margin-left: 550px;
+            color: blue;
+        }
+  }
+
+
+
+
+
+
+
+
+@keyframes slideInBottom{
+    0%{
+        transform: translatey(100%);
+    }
+    100%{
+        transform: translatex(0);
+    }
+}
+
+
+@keyframes slideInFromTop{
+    0%{
+        transform: translatey(-100%);
+    }
+    100%{
+        transform: translatex(0);
+    }
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px)  {
+  
+    .allmem-div {
+        margin-left: 0px;
+        display: block;
+    }
+    .youngers{
+        margin-left: 5px;
+        display: block;
+    }
+    .youngers img{
+       
+        width: 200px;
+       height: 200px;
+       margin-left: 50px;
+    }
+    .allmem-div img{
+       width: 200px;
+       height: 200px;
+        }
+
+        .mem-nanya {
+            margin-left: 5px;
+        }
+        .p-nanya{
+           color: red;
+           margin-left: -25px;
+           width: 250px;
+        }
+        .mem-emeka{
+            position: absolute;
+            top: 105px;
+            left: 82px;
+        }
+        .mem-jenny{
+            position: relative;
+            left: -145px;
+        }
+        .p-jenny{
+            margin-left: 140px;
+            color: red;
+            width: 200px;
+        }
+
+        .mem-stephanie{
+            position: absolute;
+            left: 180px;
+            top: 350px;
+           
+        }
+        .mem-bobs img{
+            position: relative;
+            left: -50px;
+        }
+        .p-bobs{
+            color: greenyellow;
+            margin-left: -40px;
+            }
+        .mem-collins {
+            position: absolute;
+            top: 610px;
+            left: 180px;
+        }
+        .p-collins{
+            color: brown;
+            margin-left: 50px;
+        }
+        .members{
+            margin-left: 150px;
+            
+        }
+    }
